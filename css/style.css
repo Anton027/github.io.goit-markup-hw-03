@@ -8,8 +8,8 @@ font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
 bold = 700
 normal = 400
-container(Studio) wigth 1700+30px
-pading l+r = 15px
+container(Studio) wigth 1700+30px(
+pading l+r = 15px)
 
 */
 /* ------- */
@@ -38,12 +38,26 @@ body {
   font-size: 14px;
   line-height: 1.7;
   font-weight: 400;
+  margin: 0;
 }
+/* ul {
+  margin: 0;
+  padding: 0;
+} */
+/* ------bgc & outline------ */
+h1,
+h2,
 h3 {
   background-color: violet;
 }
+button {
+  outline: 3px solid greenyellow;
+}
 ul {
   outline: 2px solid green;
+}
+a {
+  background-color: palegreen;
 }
 p {
   background-color: steelblue;
@@ -51,11 +65,21 @@ p {
 img {
   outline: 2px solid yellow;
 }
+section {
+  outline: 2px solid red;
+}
+/* ------bgc & outline------ */
+.container {
+  max-width: 1730px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .section-title {
-  background-color: violet;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -71,7 +95,6 @@ img {
   color: var(--accent-color);
 }
 .color {
-  outline: 2px solid lightskyblue;
   color: var(--title-text-color);
 }
 .filter-btn:hover,
@@ -81,7 +104,7 @@ img {
   background-color: var(--accent-color);
 }
 .btn {
-  outline: 2px solid sienna;
+  display: inline-block;
   font-size: 16px;
   border: transparent;
   border-radius: 4px;
@@ -92,7 +115,6 @@ img {
 /* header */
 .header-logo,
 .footer-logo {
-  outline: 2px solid hotpink;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -104,7 +126,6 @@ img {
 }
 .nav-link,
 .header-link {
-  outline: 2px solid olive;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -115,20 +136,31 @@ img {
 }
 
 /* Hero  */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 94px;
+}
 .hero,
 .footer {
   background-color: var(--primary-bg-color);
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
+
   color: var(--main-light-color);
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .hero-btn {
+  min-width: 200px;
+  padding: 10px 32px;
   font-weight: 700;
   line-height: 1.8;
   letter-spacing: 0.06em;
@@ -136,16 +168,34 @@ img {
 }
 
 /* Benefits */
+.benefits {
+  margin-top: 0;
+  margin-bottom: 94px;
+}
 .benefits-subtitle {
   font-size: inherit;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1.14;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
-
+/* Developments */
+.developments {
+  padding-bottom: 94px;
+}
+.developments-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
 /* Our-team */
 .our-team {
   background: var(--first-btn-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-title {
+  margin-bottom: 50px;
 }
 .team-positions,
 .team-name {
@@ -153,14 +203,21 @@ img {
   font-size: 16px;
 }
 .team-name {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
+}
+.team-positions {
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 /* filter */
 .filter-btn {
+  min-width: 73px;
+  padding: 6px 22px;
   background: var(--first-btn-color);
   line-height: 1.6;
   font-weight: 500;
-  font-size: 16px;
 }
 .btn-current {
   color: var(--main-light-color);
@@ -191,6 +248,13 @@ img {
   border: 1px solid var(--border-line-color);
 }
 /* Footer */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-logo {
+  margin-bottom: 20px;
+}
 .address-link {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -202,7 +266,6 @@ img {
 .address-link.map,
 .address-link,
 .footer-address {
-  outline: 2px solid springgreen;
   text-decoration: none;
   font-style: inherit;
 }
