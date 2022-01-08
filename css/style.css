@@ -23,6 +23,14 @@ pading l+r = 15px
   --logo-text-color: #000000;
   --border-line-color: #eeeeee;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 body {
   color: var(--primary-text-color);
   background-color: var(--main-light-color);
@@ -31,10 +39,23 @@ body {
   line-height: 1.7;
   font-weight: 400;
 }
+h3 {
+  background-color: violet;
+}
+ul {
+  outline: 2px solid green;
+}
+p {
+  background-color: steelblue;
+}
+img {
+  outline: 2px solid yellow;
+}
 .list {
   list-style: none;
 }
 .section-title {
+  background-color: violet;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -50,6 +71,7 @@ body {
   color: var(--accent-color);
 }
 .color {
+  outline: 2px solid lightskyblue;
   color: var(--title-text-color);
 }
 .filter-btn:hover,
@@ -59,6 +81,7 @@ body {
   background-color: var(--accent-color);
 }
 .btn {
+  outline: 2px solid sienna;
   font-size: 16px;
   border: transparent;
   border-radius: 4px;
@@ -69,6 +92,7 @@ body {
 /* header */
 .header-logo,
 .footer-logo {
+  outline: 2px solid hotpink;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -80,6 +104,7 @@ body {
 }
 .nav-link,
 .header-link {
+  outline: 2px solid olive;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -177,6 +202,7 @@ body {
 .address-link.map,
 .address-link,
 .footer-address {
+  outline: 2px solid springgreen;
   text-decoration: none;
   font-style: inherit;
 }
