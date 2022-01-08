@@ -45,7 +45,7 @@ body {
   padding: 0;
 } */
 /* ------bgc & outline------ */
-h1,
+/* h1,
 h2,
 h3 {
   background-color: violet;
@@ -67,12 +67,13 @@ img {
 }
 section {
   outline: 2px solid red;
-}
+} */
 /* ------bgc & outline------ */
 .container {
-  max-width: 1730px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 .list {
   margin: 0;
@@ -113,6 +114,10 @@ section {
   text-align: center;
 }
 /* header */
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .header-logo,
 .footer-logo {
   font-family: 'Raleway', sans-serif;
@@ -180,6 +185,10 @@ section {
   margin-top: 0;
   margin-bottom: 10px;
 }
+.benefits-info {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /* Developments */
 .developments {
   padding-bottom: 94px;
@@ -195,6 +204,7 @@ section {
   padding-bottom: 94px;
 }
 .team-title {
+  margin-top: 0;
   margin-bottom: 50px;
 }
 .team-positions,
@@ -211,6 +221,11 @@ section {
   margin-top: 0;
   margin-bottom: 30px;
 }
+/* catalog */
+.catalog {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* filter */
 .filter-btn {
   min-width: 73px;
@@ -218,13 +233,27 @@ section {
   background: var(--first-btn-color);
   line-height: 1.6;
   font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 .btn-current {
   color: var(--main-light-color);
   background-color: var(--accent-color);
 }
 /* Portfolio */
+
+.portfolio-item {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.portfolio-img {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
 .portfolio-subtitle {
+  margin-top: 0;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -253,6 +282,7 @@ section {
   padding-bottom: 60px;
 }
 .footer-logo {
+  margin-top: 0;
   margin-bottom: 20px;
 }
 .address-link {
@@ -263,9 +293,13 @@ section {
   color: var(--main-light-color);
 }
 .footer-logo,
-.address-link.map,
 .address-link,
 .footer-address {
+  display: block;
   text-decoration: none;
   font-style: inherit;
+}
+.address-link {
+  margin-top: 0;
+  margin-bottom: 9px;
 }
