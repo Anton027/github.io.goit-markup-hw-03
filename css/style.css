@@ -131,20 +131,6 @@ img {
   display: flex;
   align-items: center;
 }
-.nav-list {
-  margin-left: 93px;
-}
-.nav-list {
-  display: flex;
-}
-.header-contacts {
-  display: flex;
-  margin-left: auto;
-}
-.nav-list .nav-item + .nav-item,
-.header-contacts .header-item + .header-item {
-  margin-left: 50px;
-}
 .header-logo,
 .footer-logo {
   font-family: 'Raleway', sans-serif;
@@ -155,6 +141,18 @@ img {
 }
 .header-logo {
   color: var(--logo-text-color);
+}
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+.nav-list .nav-item + .nav-item,
+.header-contacts .header-item + .header-item {
+  margin-left: 50px;
 }
 .nav-link,
 .header-link {
@@ -180,7 +178,7 @@ img {
   background-color: var(--primary-bg-color);
 }
 .hero-main {
-  width: 696px;
+  max-width: 696px;
 }
 .hero-title {
   margin-top: 0;
@@ -211,6 +209,7 @@ img {
 }
 .benefits-list {
   display: flex;
+  flex-wrap: wrap;
   margin-left: calc(-1 * var(--item-space-gap));
 }
 .benefits-item {
@@ -237,11 +236,14 @@ img {
 }
 .developments-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: calc(-1 * var(--item-space-gap));
   margin-left: calc(-1 * var(--item-space-gap));
 }
 .developments-item {
   flex-basis: calc(100% / 3 - var(--item-space-gap));
   margin-left: var(--item-space-gap);
+  margin-bottom: var(--item-space-gap);
 }
 .developments-title {
   margin-top: 0;
@@ -257,11 +259,14 @@ img {
 }
 .team-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: calc(-1 * var(--item-space-gap));
   margin-left: calc(-1 * var(--item-space-gap));
 }
 .team-item {
   flex-basis: calc(100% / 4 - var(--item-space-gap));
   margin-left: var(--item-space-gap);
+  margin-bottom: var(--item-space-gap);
   text-align: center;
 
   background: #ffffff;
@@ -325,7 +330,7 @@ img {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-top: calc(-1 * var(--item-space-gap));
+  margin-bottom: calc(-1 * var(--item-space-gap));
   margin-left: calc(-1 * var(--item-space-gap));
 
   background: var(--main-light-color);
@@ -333,7 +338,9 @@ img {
 .portfolio-item {
   flex-basis: calc(100% / 3 - var(--item-space-gap));
   margin-left: var(--item-space-gap);
-  margin-top: var(--item-space-gap);
+  margin-bottom: var(--item-space-gap);
+
+  border-bottom: 1px solid var(--border-line-color);
 }
 .portfilio-content {
   padding: 20px 24px;
