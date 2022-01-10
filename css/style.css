@@ -96,6 +96,8 @@ img {
 .nav-link:focus,
 .contact:hover,
 .contact:focus,
+.address-link.map:hover,
+.address-link.map:focus,
 .nav-link.current,
 .logo-part {
   color: var(--accent-color);
@@ -173,8 +175,7 @@ img {
   margin-top: 0;
   margin-bottom: 94px;
 }
-.hero,
-.footer {
+.hero {
   background-color: var(--primary-bg-color);
 }
 .hero-main {
@@ -377,6 +378,8 @@ img {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background-color: var(--primary-bg-color);
 }
 .footer-logo {
   margin-top: 0;
