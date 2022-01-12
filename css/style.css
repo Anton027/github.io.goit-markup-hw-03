@@ -171,11 +171,15 @@ img {
 }
 .nav-link,
 .header-link {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+
 .header-link {
   color: inherit;
 }
@@ -215,9 +219,7 @@ img {
 }
 
 /* Benefits */
-.benefits {
-  margin-bottom: 94px;
-}
+
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
@@ -237,6 +239,9 @@ img {
 }
 
 /* Developments */
+.developments {
+  padding-bottom: 94px;
+}
 .developments-list {
   display: flex;
   flex-wrap: wrap;
@@ -266,7 +271,7 @@ img {
   flex-basis: calc(100% / 4 - var(--item-space-gap));
   margin-left: var(--item-space-gap);
   margin-bottom: var(--item-space-gap);
-  padding-bottom: var(--item-space-gap);
+
   text-align: center;
 
   background: #ffffff;
@@ -277,8 +282,9 @@ img {
 .team-title {
   margin-bottom: 50px;
 }
-.team-img {
-  margin-bottom: var(--item-space-gap);
+.team-content {
+  padding-top: var(--item-space-gap);
+  padding-bottom: var(--item-space-gap);
 }
 .team-positions,
 .team-name {
@@ -288,7 +294,7 @@ img {
 .team-name {
   margin-bottom: 10px;
 
-  font-weight: 700;
+  font-weight: 500;
 }
 
 /* filter catalog */
@@ -332,6 +338,10 @@ img {
 }
 .portfilio-content {
   padding: 20px 24px;
+  min-width: 322px;
+  border-bottom: 1px solid var(--border-line-color);
+  border-left: 1px solid var(--border-line-color);
+  border-right: 1px solid var(--border-line-color);
 }
 
 .portfolio-link {
@@ -381,6 +391,6 @@ img {
 .footer-logo {
   display: inline-block;
 }
-.address-list .address-item + .address-item {
-  margin-top: 9px;
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
