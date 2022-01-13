@@ -136,9 +136,6 @@ img {
 
 /* header */
 .header {
-  padding-top: 25px;
-  padding-bottom: 25px;
-
   border-bottom: 1px solid var(--head-border-color);
 }
 .header-main,
@@ -155,6 +152,9 @@ img {
   text-decoration: none;
 }
 .header-logo {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--logo-text-color);
 }
 .nav-list {
@@ -171,6 +171,7 @@ img {
 }
 .nav-link,
 .header-link {
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -305,7 +306,7 @@ img {
   margin-bottom: 50px;
 }
 .filter-list .filter-item + .filter-item {
-  padding-left: 8px;
+  margin-left: 8px;
 }
 .filter-btn {
   min-width: 73px;
@@ -338,7 +339,6 @@ img {
 }
 .portfilio-content {
   padding: 20px 24px;
-  min-width: 322px;
   border-bottom: 1px solid var(--border-line-color);
   border-left: 1px solid var(--border-line-color);
   border-right: 1px solid var(--border-line-color);
